@@ -1,0 +1,348 @@
+#coBrowseContainer a {
+    padding: 0px !important;
+        border: none;
+}
+
+.__ll_border {
+    z-index: 1 !important;
+} 
+
+#container
+{
+    width:872px;
+    height:100%;
+    position:relative;
+    margin:0px auto;
+    border:1px solid transparent;
+}
+
+.logo_container
+{
+    margin-top:20px;
+    height:50px;
+    text-align:right;
+}
+
+#slidshow_cont
+{
+    width:870px;
+    height:379px;
+    border:1px solid #c6c6c6;
+    margin:20px auto;
+    background: url(/CoBrowse/img/main_bg.png) repeat-x;
+}
+
+#greeting {
+    width: 490px;
+}
+.main_img {
+    background: url(/CoBrowse/img/girl.png?v1) no-repeat scroll 0 0 transparent;
+    bottom: 0;
+    height: 377px;
+    position: absolute;
+    right: 33px;
+    width: 302px;
+    z-index: 11;
+}
+#details_cont
+{
+    width:100%;
+    border:1px solid #c6c6c6;
+    margin:20px auto 0;
+    padding:20px 0;
+}
+
+#details_cont .option
+{
+    line-height:25px;
+}
+
+.fLeft{ float:left; }
+.fRight{ float:right; }
+.clear{ clear:both; }
+
+.coverPhone {
+    font-size: 14px;
+    text-align: right;
+    color:#5c5c5c;
+}
+
+.poweredby {
+    background: url(/CoBrowse/img/poweredby.jpg) no-repeat scroll 0 0 transparent;
+    bottom: 14px;
+    color: #969696;
+    font-size: 11px;
+    height: 16px;
+    position: absolute;
+    right: 0px;
+    width: 148px;
+    display:inline-block;
+}
+
+#privacypolicy
+{
+    margin-top:10px;
+}
+
+#whatWillSeeBox {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 224px;
+    width: 100%;
+    z-index: 999;
+}
+#whatWillSeeBox div {
+    background-color: #FFFFFF;
+    border: 1px solid #404040;
+    color: #404040;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 40px;
+    position: relative;
+    width: 300px;
+}
+#whatWillSeeBox .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#whatWillSeeBox .close img {
+    border: 0 none;
+}
+
+#whatWillSeeBox ul {
+    list-style: disc outside none;
+    margin: auto auto auto 15px;
+}
+
+#whatWillSeeBox ul li {
+    margin: auto;
+    padding: 3px;
+}
+
+#slider {
+    position:relative;
+    width:618px;
+    height:246px;
+    margin-left:190px;
+    /*background:url(../../resources/images/loading.gif) no-repeat 50% 50%;*/
+}
+#slider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+#slider a {
+    border:0;
+    display:block;
+}
+
+#greeting {
+    width: 300px;
+    margin: 30px;
+}
+
+#coBrowseContainer p, #coBrowseContainer p{
+    font-size: 15px;
+    line-height: 20px;
+    word-wrap: break-word;    
+    padding: 0 !important;
+    text-align: left !important;
+}
+
+a.startButton span {
+    background: url("/CoBrowse/img/btn_span.gif?v1") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    line-height: 18px;
+    margin: 0;
+    padding: 4px 0 4px 18px;
+}
+
+a.startButton {
+    background: url("/CoBrowse/img/btn_end.gif") no-repeat scroll right top transparent;
+    bottom: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 13px;
+    height: 28px;
+    left: 23px;
+    overflow: hidden;
+    padding-left: 0 !important;
+    padding-right: 18px !important;
+    position: absolute;
+    text-decoration: none;
+    z-index: 997;
+}
+
+a.startButton:hover
+{
+    background-position: right -28px;
+}
+a.startButton:hover span
+{
+    background-position: 0px -28px;
+}
+
+a.startButton:active
+{
+    background-position: right -56px;
+}
+a.startButton:active span
+{
+    background-position: 0 -56px;
+}
+
+#privacyText p, #privacyHeader
+{
+    font-size:12px;
+    padding: 0;
+}
+
+.maintext p {
+    margin:0px;
+    padding:0px;
+}
+
+#privacyHeader {
+    color:black;
+    padding: 0;
+    text-align: left;
+}
+
+#details_cont a, #privacyText a {
+    text-decoration: none;
+    color: #002aff;
+    outline: none;
+    text-decoration: underline;
+    line-height: 25px;
+    font: 12px/18px "Trebuchet MS", Arial, Tahoma, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#greeting
+{
+    width:490px;
+}
+.infoSignOn p{
+    font-size: 1.1em;
+    padding: 10px 10px 5px 10px;
+}
+
+#pncOverlay {
+    z-index: 0;
+    display: block;
+}
+.mask {
+    z-index: 1 !important;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+}
+
+#coBrowseContainer {
+    position: fixed;
+    top:0x;
+    background: white;
+
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding-top: 11px; min-width: 90px; min-height: 50px; width: 920px; display: block; left: 26%; top: 36px; opacity: 1; transform: scale(1); z-index: 10000;
+}
+
+
+.coBrowseHeader {
+        border-color: transparent;
+        -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+        background-color: #ffffff;
+            background-image: none;
+    background-image: none, -webkit-linear-gradient(top, none);
+    background-image: none, -moz-linear-gradient(top, none);
+    background-image: none, -o-linear-gradient(top, none);
+    background-image: none, linear-gradient(to bottom, none);
+    background-position: 50% 50%;
+    background-color: #ffffff;
+    margin-top: -11px;
+}
+
+.coBrowseActions {
+    padding-top: 0.8em;
+    position: absolute;
+    right: 0.6em;
+    top: 0;
+    white-space: nowrap;
+    color: #2e2e2e;
+        margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+        padding-top: 0.8em;
+}
+
+.coBrowseActionLink {
+        margin-right: 5px;
+    border-radius: 10px;
+        color: #2e2e2e;
+            filter: none;
+    display: inline-block;
+    height: 25px;
+    opacity: 0.7;
+    padding: 2px;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 25px;
+    border: none;
+}
+
+.coBrowseActionLink:hover {
+        color: #2e2e2e;
+    background-color: #a99f9a;
+    border-color: #a99f9a;
+        background: none;
+}
+
+.coBrowseActionClose {
+    width: 74%;
+    height: 74%;
+    position: absolute;
+        background-image: url('/css3/kendo/Default/sprite.png');
+    border-color: transparent;
+        opacity: 0.8;
+    filter: none;
+        background-position: -4px -340px;
+    width: 25px;
+    height: 25px;
+    right: 5px;
+}
+
+#modalContent {
+        -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    color: #2e2e2e;
+    background-color: #ffffff;
+        border-color: transparent;
+        overflow: visible;
+}
