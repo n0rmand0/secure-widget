@@ -1,0 +1,19 @@
+{
+  "name": "not_equifax",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ricky Normandeau",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "node-sass-chokidar ./source/stylesheets/sass/all.scss ./source/stylesheets/build.css --output-style compressed 2>&1 | build-error-notifier",
+    "watch-css": "yarn run build-css && node-sass-chokidar ./source/stylesheets/sass/all.scss ./source/stylesheets/build.css --watch --recursive 2>&1 | build-error-notifier",
+    "serve": "browser-sync start -s 'source' -f 'source'",
+    "start": "yarn watch-css & yarn serve",
+    "build": "yarn run build-css"
+  },
+  "dependencies": {
+    "browsersync": "^0.0.1-security",
+    "build-error-notifier": "^1.0.0",
+    "node-sass-chokidar": "^0.0.3"
+  }
+}

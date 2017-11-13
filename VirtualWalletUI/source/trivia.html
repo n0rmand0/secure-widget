@@ -1,0 +1,37 @@
+<html class=ng-scope id=vw-app material-adjust="" pnc-window-resize="">
+
+<head lang=en>
+  <style>
+    [uib-typeahead-popup].dropdown-menu {
+      display: block
+    }
+  </style>
+  <style>
+    .uib-time input {
+      width: 50px
+    }
+  </style>
+  <link href=./stylesheets/virtual-wallet.css rel=stylesheet>
+  <link href=./stylesheets/wbbmin.css rel=stylesheet>
+  <link href=./stylesheets/build.css rel=stylesheet>
+  <link href=./stylesheets/app1.css rel=stylesheet>
+  <link href=./stylesheets/app2.css rel=stylesheet>
+  <link href=./stylesheets/app3.css rel=stylesheet>
+  <link href=./stylesheets/build.css rel=stylesheet>
+  <script type="text/javascript" src="./javascripts/jquery-3.2.1.min.js">
+  </script>
+  <script type="text/javascript" src="./javascripts/nunjucks.min.js">
+  </script>
+  <script type="text/javascript" src="./javascripts/security-widget.js">
+  </script>
+
+
+  <body class="vwBody yui-skin-sam" help-topic-opened="" marginheight=0 marginwidth=0 ng-class="{'blurPage': topicOpened}" pnc-document-click="" style="background:#369 url(images/bg_fade.png) repeat-x">
+
+    <script type="text/javascript">
+      nunjucks.configure('views', { autoescape: true });
+      var layout = nunjucks.render("how-to-play.html");
+      document.write(layout);
+    </script>
+
+  </body>
