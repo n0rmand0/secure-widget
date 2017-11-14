@@ -6,6 +6,8 @@
 @import "utility/mixins";
 @import "utility/extends";
 
+
+
 // BASE
 @import "base/reset";
 @import "base/fonts";
@@ -27,6 +29,8 @@
 // MODULES
 @import "modules/global";
 @import "modules/callout";
+@import "modules/coin";
+@import "modules/challenges";
 
 // THEMES
 @import "themes/print";

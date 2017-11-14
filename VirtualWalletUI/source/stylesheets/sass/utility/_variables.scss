@@ -2,12 +2,12 @@
 ////////////////////////////////////////////////////////////////
 
 // Typography
-$base-font-family:'Roboto 2014', sans-serif;
-$secondary-font-family: $base-font-family;
+$base-font-family:'PNCSansMedium', 'Roboto 2014', sans-serif;
+$secondary-font-family: 'Roboto 2014', sans-serif;
 
 // Sizes
 $max-width: 1300px;
-$base-spacing: 2rem;
+$base-spacing: 1rem;
 $small-spacing: $base-spacing / 2;
 $large-spacing: $base-spacing * 2;
 
@@ -19,6 +19,7 @@ $extra-light-gray: #DEE1E3;
 $blue: #0069AA;
 $light-blue: #0096D6;
 $orange: #F58025;
+$dark-orange: #cc6633;
 $yellow: #FBB03F;
 $green: #6DB33F;
 

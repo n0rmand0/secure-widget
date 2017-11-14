@@ -7,7 +7,7 @@
   "scripts": {
     "build-css": "node-sass-chokidar ./source/stylesheets/sass/all.scss ./source/stylesheets/build.css --output-style compressed 2>&1 | build-error-notifier",
     "watch-css": "yarn run build-css && node-sass-chokidar ./source/stylesheets/sass/all.scss ./source/stylesheets/build.css --watch --recursive 2>&1 | build-error-notifier",
-    "serve": "browser-sync start -s 'source' -f 'source'",
+    "serve": "browser-sync start -s 'source' -f 'source' --reload-delay 200",
     "start": "yarn watch-css & yarn serve",
     "build": "yarn run build-css"
   },

@@ -11,6 +11,11 @@
   }
 }
 
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+);
+
 $extra-large: (
   media: '(min-width: $max-width)'
 );

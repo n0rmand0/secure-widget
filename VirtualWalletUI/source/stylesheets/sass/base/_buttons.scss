@@ -10,8 +10,8 @@
   // border: 1px solid  $base-color;
   border-radius: $base-border-radius;
   font-size: 1.2em;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 800;
+  text-transform: none;
   line-height: 1;
   text-align: center;
   vertical-align: middle;
@@ -90,6 +90,12 @@ button,
 
 // Special Links
 ////////////////////////////////////////////////////////////////
+
+.button--link {
+  font-size: 14px;
+  color: $dark-orange !important;
+  font-weight: 800;
+}
 
 .button--link:after{
   position: relative;

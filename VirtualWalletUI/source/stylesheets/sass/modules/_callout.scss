@@ -2,7 +2,38 @@
 
 }
 
-.callout__rules {
+
+.callout__about {
+  margin-top: $base-spacing;
+  margin-bottom: -2%;
+  padding-right: $base-spacing;
   background-repeat: no-repeat;
+  background-position:  right bottom;
   background-image: url("../images/prizes.jpg");
+  border-right: $base-border;
+
+  ul {
+    display: block;
+    margin: 0;
+    padding: $base-spacing 0 0 0;
+  }
+
+  li {
+    display: block;
+  }
+}
+
+.callout__promo-top {
+  display: flex;
+  align-items: center;
+
+  .coin {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+  }
+
+  h3 {
+    margin-left: $base-spacing;
+  }
 }

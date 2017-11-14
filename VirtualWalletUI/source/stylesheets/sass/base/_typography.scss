@@ -7,33 +7,57 @@ body {
   font-size: 1em;
   line-height: 1.5;
 }
+.apifest {
 
-h1,
-h2,
-h3,
+h1, .h--level1,
+h2, .h--level2,
+h3, .h-level3,
 h4,
 h5,
 h6 {
-  font-family: $secondary-font-family;
+  font-family: $base-font-family;
   line-height: 1.2;
   margin: 0 0 $small-spacing;
+
+  &.h--color {
+    color: $dark-orange;
+  }
 }
 
 
-h1 {
-  font-size: 2.5em;
+
+h1,
+h1.h--level1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8em;
+  line-height: 1.2;
+  color: $base-font-color;
+  text-transform: none;
+
 }
 
-h2 {
-  font-size: 2em;
+h2,
+.h--level2 {
+  font-weight:  800;
+  font-size: 1.5em;
+  text-transform: none;
+
 }
 
-h3 {
-  font-size: 1.75em;
+h3,
+.h--level3 {
+  font-family: $secondary-font-family;
+  font-weight: 800;
+  font-size: 1.5em;
+  text-transform: none;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-family: $secondary-font-family;
+  font-weight: 800;
+  font-size: 1.25em;
+  text-transform: none;
 }
 
 h5 {
@@ -45,7 +69,9 @@ h6 {
 }
 
 p {
+  font-family: $base-font-family;
   margin: 0 0 $small-spacing;
+  line-height: 1.2;
 }
 
 a {
@@ -73,6 +99,7 @@ hr {
   margin: $base-spacing 0;
 }
 
+}
 
 // Alternate section colors
 ////////////////////////////////////////////////////////////////
