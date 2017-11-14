@@ -609,6 +609,12 @@ body {
   border-top: none;
   margin: 1rem 0; }
 
+.apifest .h--lined {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ACB3B8;
+  font-family: "PNCSansMedium", "Roboto 2014", sans-serif;
+  font-weight: 400; }
+
 .l-section--secondary {
   color: #fff; }
   .l-section--secondary a {
@@ -708,8 +714,8 @@ body {
   .callout__promo-top h3 {
     margin-left: 1rem; }
 
-.coin--phishing-bw .coin__front,
-.coin--phishing-bw .coin__back {
+.coin.coin--phishing-bw .coin__front,
+.coin.coin--phishing-bw .coin__back {
   background-image: url("../images/coin-phishing-bw.png"); }
 
 .coin {

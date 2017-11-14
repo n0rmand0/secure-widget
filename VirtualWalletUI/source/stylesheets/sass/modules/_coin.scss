@@ -14,7 +14,7 @@ $edge-face-length: 3.1415*$coin-diameter/$edge-faces;
 $turn-time: 8s;
 
 // variations
-.coin--phishing-bw {
+.coin.coin--phishing-bw {
   .coin__front,
   .coin__back {
     background-image: url("../images/coin-phishing-bw.png");

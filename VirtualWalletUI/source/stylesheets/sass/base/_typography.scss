@@ -99,6 +99,13 @@ hr {
   margin: $base-spacing 0;
 }
 
+.h--lined {
+  padding: $base-spacing 0;
+  border-bottom: $base-border;
+  font-family: $base-font-family;
+  font-weight: 400;
+}
+
 }
 
 // Alternate section colors
