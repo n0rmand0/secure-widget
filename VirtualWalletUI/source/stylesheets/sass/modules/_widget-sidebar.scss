@@ -1,0 +1,26 @@
+.widget-sidebar {
+
+
+}
+
+
+a.widget-sidebar__link {
+  display: block;
+  padding: $large-spacing $small-spacing;
+  text-transform: none;
+  color: $base-font-color;
+  font-size: 1.3em;
+  line-height: 1;
+  font-weight: 800;
+  border-bottom: $base-border;
+
+  // &:first-child {
+  //   border-top: $base-border;
+  // }
+
+  &:after {
+    content: "››";
+    float: right;
+    color: $blue;
+  }
+}

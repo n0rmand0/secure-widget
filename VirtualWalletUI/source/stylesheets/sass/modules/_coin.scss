@@ -1,3 +1,4 @@
+// coin
 $coin-diameter: 80px;
 $coin-thickness: 8px;
 $coin-color: $yellow;
@@ -12,7 +13,6 @@ $edge-faces: 80;
 $edge-face-length: 3.1415*$coin-diameter/$edge-faces;
 $turn-time: 8s;
 
-
 // variations
 .coin--phishing-bw {
   .coin__front,
@@ -23,10 +23,6 @@ $turn-time: 8s;
 
 .coin--bw {
   // opacity: .5;
-}
-
-.coin--s {
-
 }
 
 
@@ -50,7 +46,7 @@ $turn-time: 8s;
       animation: shine linear $turn-time/2 infinite;
     }
   }
-}
+
 
 
 .coin__front,
@@ -103,7 +99,7 @@ $turn-time: 8s;
   }
 }
 
-.coin--bw .coin__edge {
+&.coin--bw .coin__edge {
   @for $i from 1 through $edge-faces {
     div:nth-child(#{$i}) {
       position: absolute;
@@ -148,4 +144,6 @@ $turn-time: 8s;
   50% {
     transform: perspective(1000px) translateY(-$coin-diameter) rotate(-40deg);
   }
+}
+
 }
