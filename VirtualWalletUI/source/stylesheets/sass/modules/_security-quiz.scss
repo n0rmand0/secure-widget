@@ -1,7 +1,29 @@
 .sq {
 
 }
+.test-buttons {
+  position: absolute;
+}
 
+.sq__btn-start {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 160px;
+  margin: auto;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: $secondary-font-family;
+  font-weight: 800;
+  color: #fff;
+  // text-shadow: 0  0 2px rgba(0,0,0,.4);
+  transform: translateX(-50%);
+  cursor: pointer;
+
+  &:hover {
+    opacity: .8;
+  }
+}
 
 .sq__pig-group {
     text-align: center;
@@ -15,7 +37,10 @@
     img.is-active{
       display: block;
       animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    }
 
+    img.is-active:first-child {
+      animation: none;
     }
 }
 
@@ -46,7 +71,7 @@
 
 
 .sq__question-group{
-  
+
 
 }
 
@@ -67,4 +92,8 @@
     display: block;
     animation: jiggle 1.0s linear 1 both;
   }
+}
+
+.sq__response {
+  position: absolute;
 }

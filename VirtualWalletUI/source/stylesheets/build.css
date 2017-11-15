@@ -740,13 +740,13 @@ body {
 
 .apifest h3,
 .apifest .h--level3 {
-  font-family: "Roboto 2014", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-size: 1.5em;
   text-transform: none; }
 
 .apifest h4 {
-  font-family: "Roboto 2014", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-size: 1.25em;
   text-transform: none; }
@@ -2950,6 +2950,25 @@ a.widget-sidebar__link {
     float: right;
     color: #0069AA; }
 
+.test-buttons {
+  position: absolute; }
+
+.sq__btn-start {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 160px;
+  margin: auto;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  transform: translateX(-50%);
+  cursor: pointer; }
+  .sq__btn-start:hover {
+    opacity: .8; }
+
 .sq__pig-group {
   text-align: center; }
   .sq__pig-group img {
@@ -2959,6 +2978,8 @@ a.widget-sidebar__link {
   .sq__pig-group img.is-active {
     display: block;
     animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both; }
+  .sq__pig-group img.is-active:first-child {
+    animation: none; }
 
 .sq__progress-group {
   display: flex;
@@ -2992,3 +3013,6 @@ a.widget-sidebar__link {
   .sq__question.is-active {
     display: block;
     animation: jiggle 1.0s linear 1 both; }
+
+.sq__response {
+  position: absolute; }
