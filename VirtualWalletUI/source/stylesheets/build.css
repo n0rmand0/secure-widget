@@ -2976,10 +2976,9 @@ a.widget-sidebar__link {
     height: 250px;
     margin: auto; }
   .sq__pig-group img.is-active {
-    display: block;
+    display: block; }
+  .sq__pig-group img.is-animated {
     animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both; }
-  .sq__pig-group img.is-active:first-child {
-    animation: none; }
 
 .sq__progress-group {
   display: flex;
@@ -3000,7 +2999,7 @@ a.widget-sidebar__link {
   .sq__progress.is-active {
     background: #F58025; }
 
-.sq__question {
+.sq__block {
   position: absolute;
   display: none;
   left: 0;
@@ -3009,10 +3008,13 @@ a.widget-sidebar__link {
   width: 400px;
   height: 200px;
   box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.5);
-  background: #fff; }
-  .sq__question.is-active {
+  background: #fff;
+  z-index: 99; }
+  .sq__block.is-active {
     display: block;
     animation: jiggle 1.0s linear 1 both; }
 
 .sq__response {
-  position: absolute; }
+  display: none; }
+  .sq__response.is-active {
+    display: block; }

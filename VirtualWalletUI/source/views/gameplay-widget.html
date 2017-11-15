@@ -13,37 +13,66 @@
 
   <div class="sq">
 
-    <div class="test-buttons"><button class="sq-btn-next-pig">Next Pig</button>
-    <button class="sq-btn-next-progress">Next Prog</button>
-    <button class="sq-btn-next-question">Next ?</button>
-  </div>
-
   <div class="sq__btn-start">Start</div>
 
 
+    <div class="sq__intro sq__block">
+      <h2 class="h--level2">Intro</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <button class="sq__btn-go">Lets Go</button>
+
+    </div>
+
+    <!-- q1 -->
     <div class="sq__question-group">
-      <div class="sq__question">
-        <div>
-          Q0
+
+      <div class="sq__question sq__block">
+        <div class="sq__question-copy">
+        <h2 class="h--level2">Question 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <br>
+
+          <button data-answer="true">True</button>
+          <button data-answer="false">False</button>
+        </div>
+        <div class="sq__response sq__response__true">
+          True!
+          <button class="next-pig">Next</button>
+        </div>
+        <div class="sq__response sq__response__false">
+          False!
+          <button class="no-next-pig">Next</button>
         </div>
       </div>
-      <div class="sq__question">
-        <div>
-          Q1
+
+      <!-- q2 -->
+      <div class="sq__question sq__block">
+        <div class="sq__question-copy">
+
+        <h2 class="h--level2">Question 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <br>
+          <button data-answer="true">True</button>
+          <button data-answer="false">False</button>
         </div>
-      </div>
-      <div class="sq__question">
-        <div>
-          Q2
+        <div class="sq__response sq__response__true">
+          True!
+          <button class="next-pig">Next</button>
+        </div>
+        <div class="sq__response sq__response__false">
+          False!
+          <button class="no-next-pig">Next</button>
         </div>
       </div>
     </div>
 
-    <div class="sq__response-group">
-<div class="sq__response">R1</div>
-      <div class="sq__response">R1</div>
-      <div class="sq__response">R2</div>
-    </div>
+
 
 
     <div class="sq__pig-group">

@@ -36,12 +36,15 @@
 
     img.is-active{
       display: block;
+    }
+
+    img.is-animated {
       animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     }
 
-    img.is-active:first-child {
-      animation: none;
-    }
+    // img.is-active:first-child {
+    //   animation: none;
+    // }
 }
 
 
@@ -75,7 +78,7 @@
 
 }
 
-.sq__question {
+.sq__block{
   position: absolute;
   display: none;
   left: 0;
@@ -87,6 +90,7 @@
   background: #fff;
   // transform: translateX(-50%);
   // opacity: .95;
+  z-index: 99;
 
   &.is-active {
     display: block;
@@ -95,5 +99,9 @@
 }
 
 .sq__response {
-  position: absolute;
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
 }

@@ -2,6 +2,7 @@ $(document).ready(function(){
   var question = 0;
   var progress = 0;
   var pig = 0;
+  score=0;
 
   var nextPig = function(){
     if (pig === 3) {
@@ -12,16 +13,15 @@ $(document).ready(function(){
     console.log("pig",pig);
     $(".sq__pig-group img").removeClass('is-active');
     $(".sq__pig-group img:nth-child("+pig+")").addClass('is-active');
+    if (pig != 1) {
+      $(".sq__pig-group img:nth-child("+pig+")").addClass('is-animated');
+    }
   }
 
 
   var nextProgress = function(){
-    if (progress === 3) {
-      progress = 0
-      $(".sq__progress").removeClass('is-active');
-    } else {
-      progress++;
-    }
+
+    progress++;
     console.log("progress",progress);
 
     $(".sq__progress:nth-child("+progress+")").addClass('is-active');
@@ -39,14 +39,93 @@ $(document).ready(function(){
 
   }
 
+  var showIntro = function(){
+    $(".sq__intro").addClass("is-active");
+  }
+
+  var win = function(){
+
+  }
+
+  var lose = function(){
+    
+  }
+
+  var checkIfWin = function() {
+    if ( score === 0 && progress === 4 ){
+      win();
+    } else if (score === 1 && progress === 4 ) {
+      lose();
+    }
+  }
+
+
   // initial functions
   nextPig();
 
-
   // buttons
-  $(".sq-btn-next-pig").click( function() {
-    nextPig();
+
+  // show intro
+  $(".sq__btn-start").click(function(){
+    // $(".sq__pig-group img:nth-child(1)").addClass('is-animated');
+    $(this).hide();
+    setTimeout(function () {
+      nextProgress();
+      showIntro();
+    }, 100);
+  });
+
+  // go to first Question
+  $(".sq__btn-go").click(function(){
+    $(".sq__intro").hide();
+    setTimeout(function () {
+      $(".sq__pig-group img:nth-child(1)").addClass('is-animated');
+    }, 500);
+    setTimeout(function () {
+      nextQuestion();
+      nextProgress();
+    }, 2000);
+  });
+
+
+  // question answer
+  $("[data-answer=true]").click(function(){
+    // $(".sq__question").hide();
+    $(".sq__question:nth-child("+question+")  .sq__response__true").addClass('is-active');
+    $(".sq__question:nth-child("+question+")  .sq__question-copy").hide();
+  });
+  $("[data-answer=false]").click(function(){
+    // $(".sq__question").hide();
+    $(".sq__question:nth-child("+question+")  .sq__question-copy").hide();
+    $(".sq__question:nth-child("+question+")  .sq__response__false").addClass('is-active');
+  });
+
+
+  // next pig
+  $(".sq-btn-next-pig, .next-pig").click( function() {
+    $(".sq__block").removeClass('is-active');
+    setTimeout(function () {
+      nextPig();
+    }, 500);
+
+    setTimeout(function () {
+      nextQuestion();
+      nextProgress();
+      checkIfWin();
+
+    }, 2000);
   } )
+
+  // no next pig
+  $(".no-next-pig").click( function() {
+    $(".sq__block").removeClass('is-active');
+    nextQuestion();
+    nextProgress();
+    checkIfWin();
+
+  })
+
+
   $(".sq-btn-next-progress").click( function() {
     nextProgress();
   } )
