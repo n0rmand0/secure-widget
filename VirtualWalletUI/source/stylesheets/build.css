@@ -2778,3 +2778,10 @@ a.widget-sidebar__link {
     content: "››";
     float: right;
     color: #0069AA; }
+
+.sq__pig-group {
+  text-align: center; }
+  .sq__pig-group img {
+    display: none;
+    height: 300px;
+    margin: auto; }
