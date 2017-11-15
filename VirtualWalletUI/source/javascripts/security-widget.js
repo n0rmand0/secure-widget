@@ -48,7 +48,7 @@ $(document).ready(function(){
   }
 
   var lose = function(){
-    
+
   }
 
   var checkIfWin = function() {
