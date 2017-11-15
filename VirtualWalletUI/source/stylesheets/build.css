@@ -860,6 +860,22 @@ body {
   font-size: .9em;
   transform: translateY(-0.1em); }
 
+.another-challenge-cta {
+  display: flex; }
+  .another-challenge-cta > div {
+    width: 50%;
+    text-align: left; }
+  .another-challenge-cta .coin {
+    float: left;
+    position: relative; }
+  .another-challenge-cta__copy {
+    position: relative;
+    top: 1rem;
+    float: left;
+    padding-left: 1rem; }
+    .another-challenge-cta__copy a {
+      margin-top: 1rem; }
+
 .callout__about {
   margin-top: 1rem;
   margin-bottom: -2%;
@@ -888,6 +904,14 @@ body {
 .coin.coin--phishing-bw .coin__front,
 .coin.coin--phishing-bw .coin__back {
   background-image: url("../images/coin-phishing-bw.png"); }
+
+.coin.coin--social-bw .coin__front,
+.coin.coin--social-bw .coin__back {
+  background-image: url("../images/coin-social-bw.png"); }
+
+.coin.coin--travel-bw .coin__front,
+.coin.coin--travel-bw .coin__back {
+  background-image: url("../images/coin-travel-bw.png"); }
 
 .coin {
   position: relative;
@@ -1947,11 +1971,11 @@ body {
       background: #fff;
       opacity: 0.3; }
   .coin--large .coin__front {
-    background-image: url("");
+    background-image: url("../images/coin-phishing.png");
     background-size: cover;
     transform: translateZ(7.5px); }
   .coin--large .coin__back {
-    background-image: url("");
+    background-image: url("../images/coin-phishing.png");
     background-size: cover;
     transform: translateZ(-7.5px) rotateY(180deg); }
   .coin--large .coin__edge div:nth-child(1) {
@@ -2957,7 +2981,7 @@ a.widget-sidebar__link {
   position: absolute;
   display: block;
   left: 50%;
-  top: 160px;
+  top: 170px;
   margin: auto;
   font-size: 4em;
   text-transform: uppercase;
@@ -3006,13 +3030,23 @@ a.widget-sidebar__link {
   margin-left: 150px;
   padding: 2rem;
   width: 400px;
-  height: 200px;
+  min-height: 200px;
   box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.5);
   background: #fff;
   z-index: 99; }
   .sq__block.is-active {
     display: block;
     animation: jiggle 1.0s linear 1 both; }
+
+.sq__block-copy,
+.sq__question-copy {
+  margin-bottom: 1rem; }
+  .sq__block-copy h1,
+  .sq__question-copy h1 {
+    margin-bottom: 1rem !important; }
+  .sq__block-copy p,
+  .sq__question-copy p {
+    margin-bottom: 1rem !important; }
 
 .sq__response {
   display: none; }
@@ -3025,3 +3059,22 @@ a.widget-sidebar__link {
     display: none;
     height: 300px;
     margin: auto; }
+
+.sq__win-screen {
+  position: absolute;
+  display: none;
+  left: 240px;
+  top: 50px; }
+  .sq__win-screen.is-active {
+    display: block;
+    animation: jiggle 1.0s ease-in 0s 1 normal none; }
+
+.sq__more {
+  display: none; }
+
+.sq__block-close {
+  position: absolute;
+  top: .5em;
+  right: 1em;
+  font-size: 1em;
+  cursor: pointer; }

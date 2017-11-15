@@ -43,19 +43,19 @@ $(document).ready(function(){
     $(".sq__intro").addClass("is-active");
   }
 
-  var win = function(){
 
-  }
-
-  var lose = function(){
-
-  }
 
   var checkIfWin = function() {
+    if (progress === 4){
+      $(".sq__progress-group").hide();
+      $(".sq__more").show();
+    }
+
     if ( score === 0 && progress === 4 ){
-      win();
+      $(".sq__win-screen").addClass('is-active');
+
     } else if (score === 1 && progress === 4 ) {
-      lose();
+      $(".sq__lose-screen").show();
     }
   }
 
@@ -88,16 +88,19 @@ $(document).ready(function(){
   });
 
 
-  // question answer
+  // question answer right
   $("[data-answer=true]").click(function(){
     // $(".sq__question").hide();
-    $(".sq__question:nth-child("+question+")  .sq__response__true").addClass('is-active');
     $(".sq__question:nth-child("+question+")  .sq__question-copy").hide();
+    $(".sq__question:nth-child("+question+")  .sq__response__true").addClass('is-active');
   });
+  // answer question wrong
   $("[data-answer=false]").click(function(){
     // $(".sq__question").hide();
+      score++;
+      $(".sq__question:nth-child("+question+")  .sq__response__false").addClass('is-active');
     $(".sq__question:nth-child("+question+")  .sq__question-copy").hide();
-    $(".sq__question:nth-child("+question+")  .sq__response__false").addClass('is-active');
+
   });
 
 
@@ -125,6 +128,16 @@ $(document).ready(function(){
 
   })
 
+
+  // close intro
+  $('.sq__block-close').click(function(){
+    $('.sq__block').removeClass('is-active');
+    $(".sq__btn-start").show();
+    progress = 0;
+    $(".sq__progress").removeClass('is-active');
+
+
+  });
 
   $(".sq-btn-next-progress").click( function() {
     nextProgress();

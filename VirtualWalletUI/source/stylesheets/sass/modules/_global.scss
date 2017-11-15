@@ -25,3 +25,29 @@
   }
 
 }
+
+
+.another-challenge-cta {
+  display: flex;
+
+  > div {
+    width: 50%;
+    text-align: left;
+  }
+
+  .coin {
+    float: left;
+    position: relative;
+  }
+
+  &__copy {
+    position: relative;
+    top: $base-spacing;
+    float: left;
+    padding-left: $base-spacing;
+
+    a {
+      margin-top: $base-spacing;
+    }
+  }
+}

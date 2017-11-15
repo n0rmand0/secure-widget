@@ -15,66 +15,100 @@
 
   <div class="sq__btn-start">Start</div>
 
-
+    <!-- intro -->
     <div class="sq__intro sq__block">
-      <h2 class="h--level2">Intro</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <button class="sq__btn-go">Lets Go</button>
+      <div class="sq__block-copy">
+      <div class="sq__block-close">X</div>
+      <h1 class="h--level1">Phishy Fishy</h1>
+      <p>To play this game, you’ll test your knowledge of Phishing Schemes while you earn coins.
 
+      </p>
+      <p>By answering questions about Phishing, you’ll learn ways scammers use phishing to try to steal your personal information, and what you can do to avoid being phished.</p>
+      <br>
+      <button class="sq__btn-go">Let's Go</button>
+      </div>
     </div>
 
     <!-- q1 -->
     <div class="sq__question-group">
 
       <div class="sq__question sq__block">
-        <div class="sq__question-copy">
-        <h2 class="h--level2">Question 1</h2>
+        <div class="sq__question-copy sq__block-copy">
+        <h1 class="h--level1">Question 1</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          A "PNC Bank" email states your account will be frozen if you do not follow a link to update your information.
+          <br><br>
+          What should you do?
         </p>
         <br>
+          <button data-answer="true">Forward the email to abuse@pnc.com </button>
+          <br><br>
+          <button data-answer="false">Click the link and save your account!</button>
+        </div>
+        <div class="sq__response sq__response__true sq__block-copy">
+          <h1 class="h--level1">Correct!</h1>
+          <p>You should not respond to the email, and forward to abuse@pnc.com</p>
+          <button class="next-pig">Let's crack the bank</button>
+        </div>
+        <div class="sq__response sq__response__false sq__block-copy">
+          <h1 class="h--level1">Sorry</h1>
+          <p>The correct answer was to NOT select the Link, and forward the email to abuse@pnc.com</p>
 
-          <button data-answer="true">True</button>
-          <button data-answer="false">False</button>
-        </div>
-        <div class="sq__response sq__response__true">
-          True!
-          <button class="next-pig">Next</button>
-        </div>
-        <div class="sq__response sq__response__false">
-          False!
-          <button class="no-next-pig">Next</button>
+          <button class="no-next-pig">Next question</button>
         </div>
       </div>
 
       <!-- q2 -->
       <div class="sq__question sq__block">
-        <div class="sq__question-copy">
+        <div class=" sq__question-copy ">
 
-        <h2 class="h--level2">Question 2</h2>
+        <h1 class="h--level1">Question 2</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          A "Verizon" text message states a bank transfer is needed to keep your account from going into arrears.  There is a link to follow to provide the transfer information.
+          <br><br>
+          What should you do?
         </p>
         <br>
-          <button data-answer="true">True</button>
-          <button data-answer="false">False</button>
+          <button data-answer="true">Do not click the link</button>
+          <button data-answer="false">Click the link</button>
         </div>
-        <div class="sq__response sq__response__true">
-          True!
-          <button class="next-pig">Next</button>
+        <div class="sq__response sq__response__true sq__block-copy">
+          <h1 class="h--level1">Correct! You’re a wiz!</h1>
+
+          <button class="next-pig">Let's crack the bank!</button>
         </div>
-        <div class="sq__response sq__response__false">
-          False!
+        <div class="sq__response sq__response__false sq__block-copy">
+          <h1 class="h--level1">No</h1>
+          <p>The correct answer was to NOT click the Link, and reach out to Customer Service.</p>
           <button class="no-next-pig">Next</button>
         </div>
       </div>
     </div>
 
 
+  <!-- win lose -->
+  <div class="sq__win-screen">
+
+      <div class="coin--large coin--phishing is-animated">
+        <!-- {% include "_coin-contents.html" %} -->
+        <div class="coin__front"></div>
+        <div class="coin__edge coin-edge--bw">
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+           <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="coin__back"></div>
+        <div class="coin__shadow"></div>
+      </div>
+  </div>
 
 
+    <!-- images -->
     <div class="sq__pig-group">
       <img src="../images/pig1.png" alt="">
       <img src="../images/pig2.png" alt="">
@@ -87,9 +121,36 @@
         <div class="sq__progress"></div>
     </div>
 
-    <div class="sq__coin">
+    <div class="sq__more">
+      <h2 class="h--lined">Try another challenge</h2>
+      <div class="another-challenge-cta">
+        <div>
+          <div class="coin coin--bw coin--social-bw">
+            <div class="coin__front"></div>
+            <div class="coin__back"></div>
+          </div>
+          <div class="another-challenge-cta__copy">
+            <h1 class="h--level1">Social Butterfly</h1>
+            <a href="" class="button">Try the challenge</a>
+          </div>
 
+        </div>
+
+        <div>
+          <div class="coin coin--bw coin--travel-bw ">
+            <div class="coin__front"></div>
+            <div class="coin__back"></div>
+          </div>
+          <div class="another-challenge-cta__copy">
+            <h1 class="h--level1">Frequent traveler</h1>
+            <a href="" class="button">Try the challenge</a>
+          </div>
+
+        </div>
+
+      </div>
     </div>
+
 
   </div>
 

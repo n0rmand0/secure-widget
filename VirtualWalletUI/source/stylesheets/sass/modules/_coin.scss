@@ -21,6 +21,20 @@ $turn-time: 8s;
   }
 }
 
+.coin.coin--social-bw {
+  .coin__front,
+  .coin__back {
+    background-image: url("../images/coin-social-bw.png");
+  }
+}
+
+.coin.coin--travel-bw {
+  .coin__front,
+  .coin__back {
+    background-image: url("../images/coin-travel-bw.png");
+  }
+}
+
 .coin--bw {
   // opacity: .5;
 }

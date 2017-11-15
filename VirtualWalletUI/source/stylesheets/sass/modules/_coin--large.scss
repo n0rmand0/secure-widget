@@ -7,8 +7,8 @@ $coin-gray: #ddd;
 // $coin-front: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Dime_Obverse_13.png/440px-Dime_Obverse_13.png";
 // $coin-back: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Dime_Reverse_13.png/440px-Dime_Reverse_13.png";
 // penny
-$coin-front: "";
-$coin-back: "";
+$coin-front: "../images/coin-phishing.png";
+$coin-back: "../images/coin-phishing.png";
 $edge-faces: 80;
 $edge-face-length: 3.1415*$coin-diameter/$edge-faces;
 $turn-time: 8s;
