@@ -721,7 +721,8 @@ body {
   .apifest h4.h--color,
   .apifest h5.h--color,
   .apifest h6.h--color {
-    color: #cc6633; }
+    color: #cc6633;
+    padding: 1rem 0; }
 
 .apifest h1,
 .apifest h1.h--level1 {
